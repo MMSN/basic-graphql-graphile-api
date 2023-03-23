@@ -1,0 +1,19 @@
+{
+  "name": "setup-typegraphql",
+  "version": "1.0.0",
+  "description": "learning how to setup a graphql api",
+  "main": "index.js",
+  "author": "Mateus Nascimento <mateus.msnascimento@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^3.12.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.3.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
