@@ -1,7 +1,7 @@
 version: "3"
 services:
   postgres:
-    container_name: postgres
+    container_name: postgres_graphql
     image: postgres:alpine
     ports:
     - "5432:5432"
@@ -14,12 +14,12 @@ services:
     environment:
     - POSTGRES_USER=admin
     - POSTGRES_PASSWORD=admin
-    - POSTGRES_DB=snackbars
+    - POSTGRES_DB=graphqltest_db
  
   pgadmin:
     links:
     - postgres:postgres
-    container_name: pgadmin
+    container_name: pgadmin_graphql
     image: dpage/pgadmin4
     ports:
     - "8080:80"
