@@ -57,7 +57,7 @@ const RegisterTransactionPlugin = makeExtendSchemaPlugin(_build => {
 const App = () => {
  const app = express()
  app.use(express.json())
- app.use(postgraphile(`postgresql://${pgUser}:${pgUser}@localhost/graphqltest_db`, 'public', {
+ app.use(postgraphile(`postgresql://USER:PASSWORD@localhost/graphqltest_db`, 'public', {
    watchPg: true,
    graphiql: true,
    enhanceGraphiql: true,
