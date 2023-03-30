@@ -61,6 +61,7 @@ const App = () => {
    watchPg: true,
    graphiql: true,
    enhanceGraphiql: true,
+   appendPlugins: [RegisterTransactionPlugin],
  }))
 
  app.get('/api/v1/hello', async (req, res, next) => {
